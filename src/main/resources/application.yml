@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Weather REST API
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/weatherApi
+    username: root
+    password: rootroot
+
+logging:
+  level:
+    web: debug
+    sql: debug
+
+weather:
+  api:
+    url: "https://api.openweathermap.org/data/2.5/weather"
+    key: "caaf46590ed76316aba9611b3cb27032"
+    units: "metric"
